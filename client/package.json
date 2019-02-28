@@ -1,0 +1,37 @@
+{
+  "name": "slp-1-client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Server for SEC Semester Long Project 1",
+  "author": "Stevens Software Engineering Club",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevensSEC/slp-1.git"
+  },
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5",
+    "socket.io-client": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "bugs": {
+    "url": "https://github.com/StevensSEC/slp-1/issues"
+  },
+  "homepage": "https://github.com/StevensSEC/slp-1#readme"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "slp-1-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Server for SEC Semester Long Project 1",
+  "author": "Stevens Software Engineering Club",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevensSEC/slp-1.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/StevensSEC/slp-1/issues"
+  },
+  "homepage": "https://github.com/StevensSEC/slp-1#readme"
+}

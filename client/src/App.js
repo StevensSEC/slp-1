@@ -1,0 +1,29 @@
+import React, { useContext, useState } from "react";
+import { MessageContext } from "./MessageProvider";
+
+export const App = () => {
+  const { messages, send } = useContext(MessageContext);
+  const [userInput, updateUserInput] = useState("");
+
+  const onInput = event => {
+    updateUserInput(event.currentTarget.value);
+  };
+
+  const onSend = () => {
+    if (send) {
+      send(userInput);
+      updateUserInput("");
+    }
+  };
+
+  return (
+    <div>
+      Yik Yak 2
+      <input onChange={onInput} value={userInput} />
+      <button disabled={!send} onClick={onSend}>
+        Send
+      </button>
+      {messages && messages.map(msg => <div key={msg.id}>{msg.content}</div>)}
+    </div>
+  );
+};
