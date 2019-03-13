@@ -9,6 +9,13 @@ export const App = () => {
     updateUserInput(event.currentTarget.value);
   };
 
+  const onEnter = event => {
+    if (event.keyCode === 13 && send && userInput) {
+      send(userInput);
+      updateUserInput("");
+    }
+  };
+
   const onSend = () => {
     if (send) {
       send(userInput);
@@ -18,8 +25,8 @@ export const App = () => {
 
   return (
     <div>
-      Yik Yak 2
-      <input onChange={onInput} value={userInput} />
+      Quick Quack
+      <input onChange={onInput} onKeyDown={onEnter} value={userInput} />
       <button disabled={!send} onClick={onSend}>
         Send
       </button>
