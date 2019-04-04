@@ -11,16 +11,6 @@ const PostContainer = styled.div`
 `
 
 export default class Post extends Component {
-    state = {
-        votes: 0
-    }
-
-    setVotes = (voteCount) => {
-        this.setState({
-            votes: voteCount
-        })
-    }
-
     render() {
         return (
             <PostContainer>

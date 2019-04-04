@@ -13,13 +13,14 @@ const HeaderContainer = styled.div`
 
 const Logo = styled.div`
     font-size: 1.75rem;
+    font-style: italic;
 `
 
 export default class Header extends Component {
     render() {
         return (
             <HeaderContainer>
-                <Logo><em>Quick Quack</em></Logo>
+                <Logo>Quick Quack</Logo>
             </HeaderContainer>
         )
     }
