@@ -7,12 +7,12 @@ const messages = new MessageStore();
 
 ws.on("connection", connection => {
   // A new user has connected
-  console.log("a user connected");
+  console.log(`User ${connection.id} connected`);
   connection.emit("allMessages", messages.getAll());
 
   // The user has disconnected
   connection.on("disconnect", () => {
-    console.log("a user disconnected");
+    console.log(`User ${connection.id} disconnected.`);
   });
 
   // The user has sent a message
